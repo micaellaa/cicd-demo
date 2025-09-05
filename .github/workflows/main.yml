@@ -26,7 +26,6 @@ jobs:
       run: mvn -B test
 
   snyk-scanning:
-    needs: springboot-test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
